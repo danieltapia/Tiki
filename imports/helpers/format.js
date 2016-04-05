@@ -1,7 +1,8 @@
 import moment from 'moment';
+import format from 'accounting-js';
 
 export default class Format {
-  static formatDate(date) {
+  static dateFromNow(date) {
     if (date && typeof date == "string") {
       return moment(date).fromNow();
     } else {
@@ -9,7 +10,7 @@ export default class Format {
     }
   }
 
-  static formatMoney(moneyString) {
-    return "$" + moneyString;
+  static money(moneyInteger) {
+    return format.formatMoney(moneyInteger);
   }
 }

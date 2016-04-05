@@ -20,7 +20,7 @@ export default class ListingCard extends React.Component {
                 </div>
 
                 <div className="col-xs-6 text-right">
-                  <div className="timestamp small-text subtle-text">{Format.formatDate(self.props.listing.created_at.toString())}</div>
+                  <div className="timestamp small-text subtle-text">{Format.dateFromNow(self.props.listing.created_at.toString())}</div>
                 </div>
               </div>
             </div>
@@ -29,7 +29,7 @@ export default class ListingCard extends React.Component {
 
         <div className="card-thumbnail">
           <img src="http://placehold.it/680x460" alt="" className="img-responsive"/>
-          <div className="price">{Format.formatMoney(self.props.listing.askingPrice)}</div>
+          <div className="price">{Format.money(self.props.listing.askingPrice)}</div>
         </div>
 
         <div className="card-content">
