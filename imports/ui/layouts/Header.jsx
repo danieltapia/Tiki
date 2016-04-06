@@ -3,21 +3,26 @@ import React from 'react';
 export default class Header extends React.Component {
   categoryHeader() {
     return (
-      <span>
-        {this.props.categorySlug} in header.jsx
-      </span>
+      <div className="nav-inner flex-box">
+        <div className="nav-left">
+          <a href="#" className="nav-icon"><i className="material-icons md-light">arrow_back</i></a>
+        </div>
+
+        <div className="nav-middle flex-item">
+          <div className="middle-text">{this.props.categorySlug}</div>
+        </div>
+
+        <div className="nav-right">
+          <a href="#" className="nav-icon"><i className="material-icons md-light">search</i></a>
+        </div>
+      </div>
     )
   }
 
   render() {
     return (
       <div className="mobile-nav navbar-fixed-top">
-        <div className="nav-inner">
-          <div className="nav-left">
-            <a href="/" className="nav-brand">Tiki</a>
-            { this.props.categorySlug ? this.categoryHeader() : "" }
-          </div>
-        </div>
+        { this.props.categorySlug ? this.categoryHeader() : "" }
       </div>
     )
   }

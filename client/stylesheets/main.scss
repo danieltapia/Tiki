@@ -2,160 +2,63 @@
 @import "layout";
 @import "components";
 
-.mobile-nav {
-  background: #00BCD4;
 
-  .color-stripe {
-    height: 2px;
-    background: #00BCD4;
-  }
-
-  .nav-inner {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-
-    .nav-middle {
-      padding: 8px 15px 8px 5px;
-      -webkit-flex: 1;
-      -ms-flex: 1;
-      flex: 1;
-
-      .search-bar {
-        width: 100%;
-        background: transparent;
-        border: 0;
-        border-bottom: 2px solid rgba(210,210,210,.5);
-        padding: 7px 10px;
-
-        &::-webkit-input-placeholder { color: rgba(255,255,255,.75); }
-        &::-ms-input-placeholder { color: rgba(255,255,255,.75); }
-        &::-moz-placeholder { color: rgba(255,255,255,.75); }
-        &:-moz-placeholder { color: rgba(255,255,255,.75); }
-      }
-    }
-  }
-
-  .nav-btn {
-    float: left;
-    display: block;
-    text-decoration: none;
-  }
-
-  .nav-icon {
-    @extend .nav-btn;
-    padding: 13px 12px;
-  }
-
-  .browse-btn {
-    padding: 13px 15px;
-  }
-
-  .nav-brand {
-    display: block;
-    color: #fff;
-    font-size: 24px;
-    line-height: 50px;
-    font-family: 'Leckerli One', cursive;
-    padding: 0 15px;
-  }
+.category-page {
+  padding-top: 75px;
+  padding-bottom: 75px;
 }
 
+.content-column {
+  padding: 0;
+}
 
 .card-row {
-  margin: 0 3px;
+  margin: 0 4px;
 
   [class*=col-] {
-    padding: 0 3px;
+    padding: 0 4px;
   }
 }
 
 .card {
-  margin: 0 0 20px;
-
-  .card-seller {
-    background: #fff;
-    border-top: 1px solid #d8d8d8;
-    padding: 10px;
-
-    .media-body {
-      vertical-align: middle;
-      line-height: 16px;
-    }
-  }
+  margin: 0 0 8px;
 
   .card-thumbnail {
     position: relative;
 
+    img {
+      border-radius: 5px;
+    }
+
     .price {
-      color: #614611;
+      width: 100%;
+      color: #fff;
       font-weight: bold;
-      background: #fdce71;
-      padding: 8px;
+      text-align: center;
+      background: rgba(0,0,0,.5);
+      border-radius: 0 0 5px 5px;
+      padding: 5px;
       position: absolute;
-      bottom: 15px;
+      bottom: 0;
       left: 0;
-
-      &:before {
-        content: "";
-        height: 0;
-        position: absolute;
-        width: 0;
-        border-color: transparent;
-        border-style: solid;
-        border-width: 18px;
-        border-left-color: #fdce71;
-        position: absolute;
-        top: 0;
-        left: 99.5%;
-
-
-      }
     }
   }
-  
+
   .card-content {
-    @extend .card-seller;
-    border-bottom: 2px solid #d8d8d8;
-    border-top-width: 0px;
+    background: #fff;
+    border-radius: 0 0 5px 5px;
+    padding: 10px;
 
     .title {
       display: block;
-      overflow: hidden;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-      margin: 0 0 1px;
+      color: #808080;
+      font-size: 12px;
+      line-height: 18px;
+      margin: 0 0 2px;
     }
 
     .price {
       font-weight: bold;
     }
-  }
-}
-
-
-.bottom-nav {
-  background: #3E4850;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-
-  .bottom-nav-item {
-    color: rgba(255,255,255,.5);
-    padding: 13px;
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-  }
-
-  .current {
-    color: #fff;
-    background: rgba(0,0,0,.2);
-    box-shadow: inset 0 -4px 0 #00BCD4;
-  }
-
-  .create-listing {
-    background: #FF5E91;
-    border-color: #FF5E91;
   }
 }

@@ -6,6 +6,13 @@
   color: #999;
 }
 
+.truncate-text {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
 .material-icons { 
   display: inline-flex;
   vertical-align: top;
@@ -24,3 +31,10 @@
 /* Rules for using icons as white on a dark background. */
 .material-icons.md-light { color: rgba(255, 255, 255, 1); }
 .material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+.box {
+  background: #fff;
+  border: 1px solid #e3e3df;
+  padding: 15px;
+  margin: 0 0 20px;
+}
