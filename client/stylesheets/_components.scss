@@ -1,10 +1,10 @@
-.small-text {
-  font-size: 12px;
-}
+.no-margin { margin: 0; }
 
-.subtle-text {
-  color: #999;
-}
+.no-padding { padding: 0; }
+
+.small-text { font-size: 12px; }
+
+.subtle-text { color: #999; }
 
 .truncate-text {
   display: block;
@@ -32,9 +32,18 @@
 .material-icons.md-light { color: rgba(255, 255, 255, 1); }
 .material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
 
-.box {
-  background: #fff;
-  border: 1px solid #e3e3df;
-  padding: 15px;
-  margin: 0 0 20px;
+.btn-default {
+  color: #fff;
+  background: #FF5E91;
+  border-color: #FF5E91;
+}
+
+.btn-primary {
+  background: #66BB6A;
+  border-color: #66BB6A;
+
+  &:hover {
+    background: #FF5E91;
+    border-color: #FF5E91;
+  }
 }

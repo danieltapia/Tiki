@@ -1,0 +1,106 @@
+.listing-page {
+  padding-bottom: 75px;
+
+  .col-xs-12 {
+    padding: 0;
+  }
+
+  .photo-slider {
+    height: 285px;
+    background: #ccc;
+    position: relative;
+
+    .item {
+      height: 285px;
+      overflow: hidden;
+      position: relative;
+
+      img {
+        height: 285px;
+        position: absolute;
+        top: -9999px;
+        bottom: -9999px;
+        left: -9999px;
+        right: -9999px;
+        margin: auto;
+      }
+    }
+  }
+
+  .listing-heading {
+    font-weight: bold;
+    padding: 0 15px;
+  }
+
+  .price {
+    color: #614611;
+    font-weight: bold;
+    background: #ffdf77;
+    padding: 8px 15px;
+  }
+
+  .title {
+    border-top-width: 0;
+
+    .name {
+      font-weight: bold;
+    }
+  }
+
+  .details {
+    .flex-box {
+      line-height: 40px;
+      border-bottom: 1px solid #e3e3df;
+      padding: 0 15px;
+
+      i {
+        margin: 11px 0;
+      }
+    }
+
+    .row {
+      line-height: 40px;
+      border-bottom: 1px solid #e3e3df;
+
+      .col-xs-4 {
+        background: #f5f5f5;
+
+        label {
+          font-weight: normal;
+        }
+      }
+    }
+
+    .row:last-child {
+      border-bottom: 0;
+    }
+  }
+
+  .seller-box {
+    line-height: 20px;
+
+    img {
+      margin-right: 10px;
+    }
+  }
+}
+
+
+@media (min-width: 768px) {
+  .listing-page {
+    padding-top: 25px;
+
+    .col-xs-12 {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    .photo-slider {
+      height: 465px;
+
+      .item, .item > img {
+        height: 465px;
+      }
+    }
+  }
+}

@@ -7,7 +7,8 @@ export default class AppLayout extends React.Component {
   render() {
     return (
       <div>
-        <Header categorySlug={this.props.children ? this.props.children.props.routeParams.categorySlug : null} />
+        <Header categorySlug={this.props.children ? this.props.children.props.routeParams.categorySlug : null} 
+                listingSlug={this.props.children ? this.props.children.props.routeParams.listingSlug : null} />
 
         {this.props.children}
 
