@@ -6,58 +6,68 @@
   }
 
   .photo-slider {
-    height: 285px;
-    background: #ccc;
+    height: 315px;
+    background: #111;
     position: relative;
 
     .item {
-      height: 285px;
+      height: 315px;
       overflow: hidden;
       position: relative;
 
       img {
-        height: 285px;
+        height: 315px;
         position: absolute;
         top: -9999px;
         bottom: -9999px;
         left: -9999px;
         right: -9999px;
         margin: auto;
+        // max-height: 100%;  
+        // max-width: 100%; 
+        // width: auto;
+        // height: auto;
+        // position: absolute;  
+        // top: 0;  
+        // bottom: 0;  
+        // left: 0;  
+        // right: 0;  
+        // margin: auto;
       }
+    }
+
+    .price {
+      color: #fff;
+      font-weight: bold;
+      background: #72b823;
+      border-radius: 0 3px 3px 0;
+      padding: 6px 12px;
+      position: absolute;
+      bottom: 15px;
+      left: 0;
     }
   }
 
   .listing-heading {
     font-weight: bold;
     padding: 0 15px;
-  }
-
-  .price {
-    color: #614611;
-    font-weight: bold;
-    background: #ffdf77;
-    padding: 8px 15px;
+    margin-top: 0;
   }
 
   .title {
     border-top-width: 0;
 
-    .name {
+    .name, .price {
       font-weight: bold;
+    }
+
+    .price {
+      color: #5EB238;
+      letter-spacing: 0.5px;
     }
   }
 
   .details {
-    .flex-box {
-      line-height: 40px;
-      border-bottom: 1px solid #e3e3df;
-      padding: 0 15px;
-
-      i {
-        margin: 11px 0;
-      }
-    }
-
     .row {
       line-height: 40px;
       border-bottom: 1px solid #e3e3df;
@@ -72,15 +82,51 @@
     }
 
     .row:last-child {
-      border-bottom: 0;
+      border-bottom-width: 0;
     }
   }
 
   .seller-box {
     line-height: 20px;
 
-    img {
+    .avatar {
       margin-right: 10px;
+      position: relative;
+
+      .status-orb {
+        width: 14px;
+        height: 14px;
+        background: #5EB238;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+    }
+
+    .username {
+      display: block;
+      font-weight: bold;
+    }
+
+    .active-star {
+      color: #FFC107;
+    }
+  }
+
+  .report-listing {
+    display: block;
+    color: #F44336;
+    border-top: 1px solid #d3d3cf;
+    border-bottom: 1px solid #d3d3cf;
+    padding: 10px 0;
+
+    span {
+      display: inline-block;
+      line-height: 24px;
+      font-weight: bold;
+      margin-left: 4px;
     }
   }
 }

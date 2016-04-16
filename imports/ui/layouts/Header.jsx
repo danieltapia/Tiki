@@ -3,7 +3,7 @@ import React from 'react';
 export default class Header extends React.Component {
   categoryHeader() {
     return (
-      <div className="nav-inner flex-box">
+      <div className="blue-nav nav-inner flex-box">
         <div className="nav-left">
           <a href="#" className="nav-icon"><i className="material-icons md-light">arrow_back</i></a>
         </div>
@@ -21,18 +21,18 @@ export default class Header extends React.Component {
 
   listingHeader() {
     return (
-      <div className="nav-inner flex-box">
+      <div className="transparent-nav nav-inner flex-box">
         <div className="nav-left">
           <a href="#" className="nav-icon"><i className="material-icons md-light">arrow_back</i></a>
         </div>
 
         <div className="nav-middle flex-item">
-          <div className="middle-text">Anuncio</div>
+          <div className="middle-text truncate-text"></div>
         </div>
 
         <div className="nav-right">
           <a href="#" className="nav-icon"><i className="material-icons md-light">favorite_outline</i></a>
-          <a href="#" className="nav-icon"><i className="material-icons md-light">share</i></a>
+          <a href="#" className="nav-icon"><i className="material-icons md-light">more_vert</i></a>
         </div>
       </div>
     )
@@ -40,13 +40,9 @@ export default class Header extends React.Component {
 
   defaultHeader() {
     return (
-      <div className="nav-inner flex-box">
-        <div className="nav-left">
-          <a href="#" className="nav-icon"><i className="material-icons md-light">arrow_back</i></a>
-        </div>
-
+      <div className="blue-nav nav-inner flex-box">
         <div className="nav-middle flex-item">
-          <div className="middle-text">TIki</div>
+          <div className="middle-text">TIKI</div>
         </div>
 
         <div className="nav-right">

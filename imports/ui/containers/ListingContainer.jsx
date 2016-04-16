@@ -5,8 +5,8 @@ export default class ListingContainer extends React.Component {
   render() {
     var listing = {
       name: 'Vendo Espetacular Porsche Cayenne 2012',
-      price: '34,200',
-      description: 'VENDO HERMOSA BMW "X6" 2014 sacada de andar Motors, color gris, motor 3500cc, BITURBO, caja secuencial, interior blanco, asientos de cuero, asientos eléctricos, radio con pantalla, gps, mp3, AUX, USB, aros 20" originales llantas nuevas, garantía vigente, 30000 kilómetros, papeles al día, excelente estado, precio 77000$ charlable, ref: 70000000',
+      price: '999,999,999.00',
+      description: 'Absolutely like new black tan range rover supercharged long wheelbase model need to sell asap $115,989 over $10k under retail',
       created_at: new Date()
     };
     return (
@@ -17,41 +17,35 @@ export default class ListingContainer extends React.Component {
             <div className="col-md-8 col-xs-12">
               <div className="photo-slider">
                 <div className="item">
-                  <img src="http://placehold.it/800x600" alt=""/>
+                  <img src="http://www.tumomo.com/files/551079_1.jpg" alt=""/>
                 </div>
               </div>
-
-              <div className="price text-center">$us. {listing.price}</div>
 
               <div className="box title">
-                <div className="name text-center">{listing.name}</div>
+                <div className="name">{listing.name}</div>
+                <div className="price">$us. {listing.price}</div>
               </div>
-
+              
               <h6 className="listing-heading text-uppercase subtle-text">Descripción</h6>
-              <div className="box">
+              <div className="box description">
                 <p>{listing.description}</p>
               </div>
-
+              
               <h6 className="listing-heading text-uppercase subtle-text">Detalles</h6>
               <div className="box details no-padding">
-                <div className="flex-box">
-                  <div className="flex-item subtle-text"><i className="material-icons md-18">monetization_on</i> Ofertas hechas</div>
-                  <div>3</div>
+                <div className="row no-margin">
+                  <div className="col-xs-4"><label className="no-margin subtle-text">Ciudad</label></div>
+                  <div className="col-xs-8">Santa Cruz</div>
                 </div>
 
-                <div className="flex-box">
-                  <div className="flex-item subtle-text"><i className="material-icons md-18">access_time</i> Actualizado</div>
-                  <div>Hace 28 minutos</div>
+                <div className="row no-margin">
+                  <div className="col-xs-4"><label className="no-margin subtle-text">Categoria</label></div>
+                  <div className="col-xs-8"><a href="#">Celulares y Accesorios</a></div>
                 </div>
 
-                <div className="flex-box">
-                  <div className="flex-item subtle-text"><i className="material-icons md-18">place</i> Ciudad</div>
-                  <div>Santa Cruz</div>
-                </div>
-
-                <div className="flex-box">
-                  <div className="flex-item subtle-text"><i className="material-icons md-18">dashboard</i> Categoria</div>
-                  <div>Autos y Vehículos</div>
+                <div className="row no-margin">
+                  <div className="col-xs-4"><label className="no-margin subtle-text">Desde</label></div>
+                  <div className="col-xs-8">12/05/2016</div>
                 </div>
               </div>
             </div>
@@ -60,12 +54,27 @@ export default class ListingContainer extends React.Component {
             <div className="col-md-4 col-xs-12">
               <h6 className="listing-heading text-uppercase subtle-text">Vendedor</h6>
               <div className="box flex-box seller-box">
-                <img src="http://placehold.it/40x40" alt="" className="img-circle"/>
+                <div className="avatar">
+                  <img src="http://lorempixel.com/40/40" alt="" className="img-circle"/>
+                  <div className="status-orb"></div>
+                </div>
 
                 <div className="flex-item">
-                  <a href="#">Daniel T</a>
-                  <div className="subtle-text">Online</div>
+                  <a href="#" className="username">Daniel T.</a>
+                  <div className="phone">
+                    <i className="material-icons md-18 subtle-text active-star">star</i>
+                    <i className="material-icons md-18 subtle-text active-star">star</i>
+                    <i className="material-icons md-18 subtle-text active-star">star</i>
+                    <i className="material-icons md-18 subtle-text active-star">star</i>
+                    <i className="material-icons md-18 subtle-text">star_outline</i> (4)
+                  </div>
                 </div>
+              </div>
+
+              <h6 className="listing-heading text-uppercase subtle-text">Anuncios Destacados</h6>
+              <div className="row no-margin">
+                <div className="col-xs-6"><div className="box"></div></div>
+                <div className="col-xs-6"><div className="box"></div></div>
               </div>
             </div>
           </div>
