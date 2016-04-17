@@ -12,7 +12,7 @@ export default class AppLayout extends React.Component {
 
         {this.props.children}
 
-        <Navigation />
+        
       </div>
     )
   }

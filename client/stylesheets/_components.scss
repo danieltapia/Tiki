@@ -35,17 +35,22 @@ a { color: #34a8c4; }
 .material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
 
 .btn-default {
-  color: #fff;
-  background: #FF5E91;
+  color: #FF5E91;
+  background: #fff;
   border-color: #FF5E91;
 }
 
 .btn-primary {
-  background: #66BB6A;
-  border-color: #66BB6A;
+  background: #FF5E91;
+  border-color: #FF5E91;
 
   &:hover {
     background: #FF5E91;
     border-color: #FF5E91;
   }
+}
+
+.btn-success {
+  background: #5EB238;
+  border-color: #5EB238;
 }

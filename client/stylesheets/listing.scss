@@ -6,64 +6,66 @@
   }
 
   .photo-slider {
-    height: 315px;
+    height: 310px;
     background: #111;
     position: relative;
 
     .item {
-      height: 315px;
+      height: 310px;
       overflow: hidden;
       position: relative;
 
       img {
-        height: 315px;
-        position: absolute;
-        top: -9999px;
-        bottom: -9999px;
-        left: -9999px;
-        right: -9999px;
-        margin: auto;
-        // max-height: 100%;  
-        // max-width: 100%; 
-        // width: auto;
-        // height: auto;
-        // position: absolute;  
-        // top: 0;  
-        // bottom: 0;  
-        // left: 0;  
-        // right: 0;  
+        // height: 310px;
+        // position: absolute;
+        // top: -9999px;
+        // bottom: -9999px;
+        // left: -9999px;
+        // right: -9999px;
         // margin: auto;
+        max-height: 100%;  
+        max-width: 100%; 
+        width: auto;
+        height: auto;
+        position: absolute;  
+        top: 0;  
+        bottom: 0;  
+        left: 0;  
+        right: 0;  
+        margin: auto;
       }
-    }
-
-    .price {
-      color: #fff;
-      font-weight: bold;
-      background: #72b823;
-      border-radius: 0 3px 3px 0;
-      padding: 6px 12px;
-      position: absolute;
-      bottom: 15px;
-      left: 0;
     }
   }
 
   .listing-heading {
-    font-weight: bold;
+    font-weight: 500;
     padding: 0 15px;
     margin-top: 0;
   }
 
   .title {
     border-top-width: 0;
+    border-bottom-color: #eee;
 
     .name, .price {
+      font-size: 15px;
       font-weight: bold;
     }
 
     .price {
       color: #5EB238;
       letter-spacing: 0.5px;
+    }
+  }
+
+  .make-offer {
+    border-top-width: 0;
+    padding: 12px 15px;
+
+    a {
+      font-weight: bold;
+      line-height: 36px;
+      padding: 0 12px;
     }
   }
 
@@ -109,24 +111,27 @@
       display: block;
       font-weight: bold;
     }
-
-    .active-star {
-      color: #FFC107;
-    }
   }
 
-  .report-listing {
-    display: block;
-    color: #F44336;
-    border-top: 1px solid #d3d3cf;
-    border-bottom: 1px solid #d3d3cf;
-    padding: 10px 0;
+  .listing-actions {
+    box-shadow: 0 -3px 0 #f0f0eb;
 
-    span {
-      display: inline-block;
-      line-height: 24px;
+    a {
+      display: block;
+      color: #fff;
       font-weight: bold;
-      margin-left: 4px;
+      background: #FF5E91;
+      padding: 10px 15px;
+
+      span {
+        display: inline-block;
+        line-height: 24px;
+        margin-left: 5px;
+      }
+    }
+
+    .flex-item:first-child a {
+      border-right: 1px solid #f0f0eb;
     }
   }
 }

@@ -32,7 +32,8 @@ export default class Header extends React.Component {
 
         <div className="nav-right">
           <a href="#" className="nav-icon"><i className="material-icons md-light">favorite_outline</i></a>
-          <a href="#" className="nav-icon"><i className="material-icons md-light">more_vert</i></a>
+          <a href="#" className="nav-icon"><i className="material-icons md-light">share</i></a>
+          <a href="#" className="nav-icon"><i className="material-icons md-light">flag</i></a>
         </div>
       </div>
     )
