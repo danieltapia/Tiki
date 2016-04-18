@@ -39,6 +39,24 @@ export default class Header extends React.Component {
     )
   }
 
+  chatHeader() {
+    return (
+      <div className="blue-nav nav-inner flex-box">
+        <div className="nav-left">
+          <a href="#" className="nav-icon"><i className="material-icons md-light">arrow_back</i></a>
+        </div>
+
+        <div className="nav-middle flex-item truncate-text">
+          <div className="middle-text"><img src="http://placehold.it/30x30" alt="" className="img-circle avatar"/>{this.props.chatSlug}</div>
+        </div>
+
+        <div className="nav-right">
+          <a href="#" className="nav-icon"><i className="material-icons md-light">info_outline</i></a>
+        </div>
+      </div>
+    )
+  }
+
   defaultHeader() {
     return (
       <div className="blue-nav nav-inner flex-box">
@@ -56,7 +74,10 @@ export default class Header extends React.Component {
   render() {
     return (
       <div className="mobile-nav navbar-fixed-top">
-        { this.props.categorySlug ? this.categoryHeader() : this.props.listingSlug ? this.listingHeader() : this.defaultHeader() }
+        { this.props.categorySlug ? this.categoryHeader() : 
+          this.props.listingSlug ? this.listingHeader() : 
+          this.props.chatSlug ? this.chatHeader() : 
+          this.defaultHeader() }
       </div>
     )
   }

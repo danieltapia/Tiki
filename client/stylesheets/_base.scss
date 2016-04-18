@@ -1,13 +1,13 @@
 body {
   color: #565A5C;
   font-family: 'Roboto', sans-serif;
-  background: #f0f0eb;
+  background: #eeeeea;
 }
 
 .box {
   background: #fff;
-  border-top: 1px solid #e3e3df;
-  border-bottom: 1px solid #e3e3df;
+  border-top: 1px solid #d3d3cf;
+  border-bottom: 1px solid #d3d3cf;
   padding: 15px;
   margin: 0 0 15px;
 }
@@ -15,7 +15,7 @@ body {
 
 @media (min-width: 768px) {
   .box {
-    border: 1px solid #e3e3df;
+    border: 1px solid #d3d3cf;
   }
 }
 

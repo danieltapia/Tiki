@@ -8,7 +8,8 @@ export default class AppLayout extends React.Component {
     return (
       <div>
         <Header categorySlug={this.props.children ? this.props.children.props.routeParams.categorySlug : null} 
-                listingSlug={this.props.children ? this.props.children.props.routeParams.listingSlug : null} />
+                listingSlug={this.props.children ? this.props.children.props.routeParams.listingSlug : null}
+                chatSlug={this.props.children ? this.props.children.props.routeParams.chatSlug : null} />
 
         {this.props.children}
 

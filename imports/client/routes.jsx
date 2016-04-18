@@ -11,7 +11,7 @@ import ChatContainer from '/imports/ui/containers/ChatContainer.jsx';
 export const renderRoutes = () => (
   <Router history={browserHistory}>
     <Route path="/" component={AppLayout}>
-      <Route path="chat" component={ChatContainer}/>
+      <Route path="chat/:chatSlug" component={ChatContainer}/>
       <Route path="new-listing" component={NewListingContainer}/>
       <Route path="settings" component={UserSettingsContainer}/>
       <Route path="category/:categorySlug" component={CategoryContainer}/>

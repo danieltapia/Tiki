@@ -1,0 +1,68 @@
+.chat-page {
+  .sub-header {
+    padding: 10px 15px;
+  }
+
+  .conversation-panel {
+    height: 100vh;
+    background: url('/images/chat-bg.png') repeat;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: relative;
+
+
+    .message {
+      margin: 0 15px 20px;
+      position: relative;
+
+      .bubble {
+        max-width: 75%;
+        float: left;
+        color: #363A3C;
+        background: #fff;
+        box-shadow: inset 0 0 0 1px rgba(0,0,0,.15);
+        border-radius: 7.5px;
+        padding: 8px 12px;
+        margin-bottom: 5px;
+        clear: both;
+      }
+
+      .bubble:last-child { margin: 0; }
+      .bubble:only-child { margin: 0; }
+
+      &:after {
+        content: '';
+        display: table;
+        clear: both;
+      }
+    }
+
+    .message-out .bubble {
+      float: right;
+      background: #DCEDC8;
+      box-shadow: inset 0 0 0 1px rgba(0,0,0,.075);
+    }
+
+    .block-compose {
+      box-shadow: 0 -5px 0 #eeeeea;
+
+      .form-control {
+        height: 50px;
+        border: 0;
+        border-top: 1px solid #d3d3cf;
+        border-radius: 0;
+        box-shadow: none;
+      }
+
+      a.send {
+        display: block;
+        color: #fff;
+        background: #FF5E91;
+        box-shadow: inset 0 0 0 1px rgba(0,0,0,.1);
+        padding: 13px 15px;
+      }
+    }
+  }
+}
