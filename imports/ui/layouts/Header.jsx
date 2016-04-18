@@ -46,12 +46,20 @@ export default class Header extends React.Component {
           <a href="#" className="nav-icon"><i className="material-icons md-light">arrow_back</i></a>
         </div>
 
-        <div className="nav-middle flex-item truncate-text">
-          <div className="middle-text"><img src="http://placehold.it/30x30" alt="" className="img-circle avatar"/>{this.props.chatSlug}</div>
+        <div className="nav-middle nav-middle-chat flex-item truncate-text">
+          <div className="middle-text">
+            <div className="flex-box">
+              <img src="http://placehold.it/30x30" alt="" className="img-circle avatar"/>
+              <div className="flex-item">
+                {this.props.chatSlug}
+                <div className="last-seen small-text">ver perfil</div>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div className="nav-right">
-          <a href="#" className="nav-icon"><i className="material-icons md-light">info_outline</i></a>
+          <a href="#" className="nav-icon"><i className="material-icons md-light">more_vert</i></a>
         </div>
       </div>
     )

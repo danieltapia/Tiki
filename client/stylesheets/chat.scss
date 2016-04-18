@@ -1,3 +1,39 @@
+.nav-middle-chat {
+  .middle-text {
+    line-height: 15px !important;
+
+    .avatar {
+      margin-right: 5px;
+    }
+
+    .last-seen {
+      font-weight: normal;
+      text-transform: initial;
+    }
+  }
+}
+
+
+.sub-header-chat {
+  font-weight: bold;
+  padding: 10px 15px;
+
+  img {
+    margin-right: 10px;
+  }
+
+  .price {
+    color: #565A5C;
+  }
+
+  i {
+    margin: 2px 0;
+  }
+
+  &:hover { text-decoration: none; }
+}
+
+
 .chat-page {
   .sub-header {
     padding: 10px 15px;

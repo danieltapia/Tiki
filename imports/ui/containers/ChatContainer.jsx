@@ -6,6 +6,16 @@ export default class ChatContainer extends React.Component {
       <div>
 
         <div className="chat-page">
+          <a className="sub-header flex-box navbar-fixed-top sub-header-chat">
+            <img src="http://placehold.it/40x40" alt=""/>
+            <div className="flex-item truncate-text">
+              <div className="title">Listing title</div>
+              <div className="price">$999,999,999.00</div>
+            </div>
+
+            <i className="material-icons md-36 md-dark md-inactive">chevron_right</i>
+          </a>
+          
           <div className="conversation-panel">
             
             <div className="message">
