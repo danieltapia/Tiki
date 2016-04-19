@@ -19,6 +19,9 @@ ecmascript              # Enable ECMAScript2015+ syntax in app code
 static-html
 fourseven:scss
 
+# Development packages
+msavin:mongol
+
 # Application Packages
 twbs:bootstrap
 jagi:astronomy@2.0.0-rc.8
