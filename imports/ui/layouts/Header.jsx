@@ -65,6 +65,20 @@ export default class Header extends React.Component {
     )
   }
 
+  newListingHeader() {
+    return (
+      <div className="blue-nav nav-inner flex-box">
+        <div className="nav-left">
+          <a href="#" className="nav-icon"><i className="material-icons md-light">arrow_back</i></a>
+        </div>
+
+        <div className="nav-middle flex-item">
+          <div className="middle-text truncate-text">{this.props.newListing}</div>
+        </div>
+      </div>
+    )
+  }
+
   defaultHeader() {
     return (
       <div className="blue-nav nav-inner flex-box">
@@ -85,6 +99,7 @@ export default class Header extends React.Component {
         { this.props.categorySlug ? this.categoryHeader() : 
           this.props.listingSlug ? this.listingHeader() : 
           this.props.chatSlug ? this.chatHeader() : 
+          this.props.newListing ? this.newListingHeader() : 
           this.defaultHeader() }
       </div>
     )

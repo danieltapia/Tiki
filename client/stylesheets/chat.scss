@@ -35,10 +35,6 @@
 
 
 .chat-page {
-  .sub-header {
-    padding: 10px 15px;
-  }
-
   .conversation-panel {
     height: 100vh;
     background: url('/images/chat-bg.png') repeat;
@@ -47,7 +43,6 @@
     overflow-y: scroll;
     overflow-x: hidden;
     position: relative;
-
 
     .message {
       margin: 0 15px 20px;

@@ -1,0 +1,52 @@
+.new-listing-page {
+  padding-top: 75px;
+
+  .photos {
+    padding: 0 15px;
+    margin: 0 0 20px;
+
+    .upload-box {
+      float: left;
+      width: 100px;
+      height: 100px;
+      background: rgba(0,0,0,.1);
+      border: 2px dashed rgba(0,0,0,.1);
+      margin-right: 15px;
+    }
+
+    &:after {
+      content: '';
+      clear: both;
+      display: table;
+    }
+  }
+
+  .box {
+    i {
+      margin: 12px 10px 12px 0;
+    }
+
+    .flex-box {
+      border-bottom: 1px solid #e3e3df;
+      padding: 0 0 0 15px;
+
+      .flex-item {
+        padding: 7px 0;
+
+        .form-control {
+          border: 0;
+          box-shadow: none;
+          padding: 6px 0;
+        }
+
+        select {
+          -webkit-appearance: none;
+        }
+      }
+    }
+
+    .flex-box:last-child {
+      border-bottom-width: 0;
+    }
+  }
+}

@@ -30,12 +30,12 @@ export default class ListingContainer extends React.Component {
                 <a href="#" className="btn btn-block btn-success text-uppercase small-text">Haz una oferta</a>
               </div>
               
-              <h6 className="listing-heading text-uppercase subtle-text">Descripción</h6>
+              <h6 className="background-heading text-uppercase subtle-text">Descripción</h6>
               <div className="box description">
                 <p>{listing.description}</p>
               </div>
               
-              <h6 className="listing-heading text-uppercase subtle-text">Detalles</h6>
+              <h6 className="background-heading text-uppercase subtle-text">Detalles</h6>
               <div className="box details no-padding">
                 <div className="row no-margin">
                   <div className="col-xs-4"><label className="no-margin subtle-text">Ciudad</label></div>
@@ -56,7 +56,7 @@ export default class ListingContainer extends React.Component {
 
 
             <div className="col-md-4 col-xs-12">
-              <h6 className="listing-heading text-uppercase subtle-text">Vendedor</h6>
+              <h6 className="background-heading text-uppercase subtle-text">Vendedor</h6>
               <div className="box flex-box seller-box">
                 <div className="avatar">
                   <img src="http://lorempixel.com/40/40" alt="" className="img-circle"/>
@@ -69,7 +69,7 @@ export default class ListingContainer extends React.Component {
                 </div>
               </div>
 
-              <h6 className="listing-heading text-uppercase subtle-text">Anuncios Destacados</h6>
+              <h6 className="background-heading text-uppercase subtle-text">Anuncios Destacados</h6>
               <div className="row no-margin">
                 <div className="col-xs-6"><div className="box"></div></div>
                 <div className="col-xs-6"><div className="box"></div></div>
