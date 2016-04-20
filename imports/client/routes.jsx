@@ -1,7 +1,7 @@
 import React from 'react';
 import { Router, Route, browserHistory } from 'react-router';
 
-import AppLayout from '/imports/ui/layouts/AppLayout.jsx';
+import AppContainer from '/imports/ui/containers/AppContainer.jsx';
 import CategoryContainer from '/imports/ui/containers/CategoryContainer.jsx';
 import ListingContainer from '/imports/ui/containers/ListingContainer.jsx';
 import NewListingContainer from '/imports/ui/containers/NewListingContainer.jsx';
@@ -11,7 +11,7 @@ import Login from '/imports/ui/components/login/Login.jsx'
 
 export const renderRoutes = () => (
   <Router history={browserHistory}>
-    <Route path="/" component={AppLayout}>
+    <Route path="/" component={AppContainer}>
       <Route path="login" component={Login} />
       <Route path="chat/:chatSlug" component={ChatContainer}/>
       <Route path="new-listing" component={NewListingContainer}/>
@@ -20,4 +20,4 @@ export const renderRoutes = () => (
       <Route path="for-sale/:id/:listingSlug" component={ListingContainer}/>
     </Route>
   </Router>
-)
+) 

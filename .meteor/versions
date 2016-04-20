@@ -1,3 +1,6 @@
+accounts-base@1.2.7
+accounts-facebook@1.0.9
+accounts-oauth@1.1.12
 allow-deny@1.0.4
 autoupdate@1.2.9
 babel-compiler@6.6.4
@@ -15,6 +18,7 @@ dburles:mongo-collection-instances@0.3.5
 ddp@1.2.5
 ddp-client@1.2.7
 ddp-common@1.2.5
+ddp-rate-limiter@1.0.4
 ddp-server@1.2.6
 deps@1.0.12
 diff-sequence@1.0.5
@@ -22,6 +26,7 @@ ecmascript@0.4.3
 ecmascript-runtime@0.2.10
 ejson@1.0.11
 es5-shim@4.5.10
+facebook@1.2.6
 fastclick@1.0.11
 fourseven:scss@3.4.3
 geojson-utils@1.0.8
@@ -38,6 +43,7 @@ jquery@1.11.8
 lai:collection-extensions@0.2.1_1
 launch-screen@1.0.11
 livedata@1.0.18
+localstorage@1.0.9
 logging@1.0.12
 mdg:validation-error@0.5.1
 meteor@1.1.14
@@ -54,15 +60,20 @@ mongo@1.1.7
 mongo-id@1.0.4
 msavin:mongol@1.6.2
 npm-mongo@1.4.43
+oauth@1.1.10
+oauth2@1.1.9
 observe-sequence@1.0.11
 ordered-dict@1.0.7
 promise@0.6.7
 random@1.0.9
+rate-limit@1.0.4
+react-meteor-data@0.2.9
 reactive-dict@1.1.7
 reactive-var@1.0.9
 reload@1.1.8
 retry@1.0.7
 routepolicy@1.0.10
+service-configuration@1.0.9
 session@1.1.5
 spacebars@1.0.11
 spacebars-compiler@1.0.11
@@ -72,6 +83,7 @@ static-html@1.0.7
 stevezhu:lodash@4.11.1
 templating@1.1.9
 templating-tools@1.0.4
+tmeasday:check-npm-versions@0.2.0
 tracker@1.0.13
 ui@1.0.11
 underscore@1.0.8
