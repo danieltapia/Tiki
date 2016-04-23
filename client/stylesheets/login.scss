@@ -1,0 +1,37 @@
+.login-page {
+  padding-top: 75px;
+
+  .vertical-alignment-helper {
+    display: table;
+    width: 85%;
+    height: 100%;
+    pointer-events: none;
+    margin: 0 auto;
+  }
+
+  .vertical-align-center {
+    display: table-cell;
+    vertical-align: middle;
+    pointer-events: none;
+  }
+
+  .modal-content {
+    width: inherit;
+    height: inherit;
+    pointer-events: all;
+    background: url('/images/chat-bg.png');
+    border-width: 0;
+    margin: 0 auto;
+
+    p {
+      padding: 0 5px;
+      margin: 0 0 15px;
+    }
+
+    .btn-facebook {
+      color: #fff;
+      background: #4969ad;
+      margin: 0 0 5px;
+    }
+  }
+}

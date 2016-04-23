@@ -11,8 +11,10 @@ a {
 
 .subtle-text { color: #969A9C; }
 
+h1, h2, h3, h4 { font-weight: 700; }
+
 .background-heading {
-  font-weight: 500;
+  font-weight: 700;
   padding: 0 15px;
   margin-top: 0;
 }
@@ -43,23 +45,25 @@ a {
 .material-icons.md-light { color: rgba(255, 255, 255, 1); }
 .material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
 
+.btn {
+  border: 0;
+  line-height: 38px;
+  padding: 0 12px;
+}
+
 .btn-default {
   color: #FF5E91;
   background: #fff;
-  border-color: #FF5E91;
 }
 
 .btn-primary {
   background: #FF5E91;
-  border-color: #FF5E91;
 
   &:hover {
     background: #FF5E91;
-    border-color: #FF5E91;
   }
 }
 
 .btn-success {
   background: #5EB238;
-  border-color: #5EB238;
 }
